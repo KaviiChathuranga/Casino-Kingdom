@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Casino_Kingdom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3T-1E-jqY">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdP-EU-F2E">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                        <color key="backgroundColor" red="0.45401859283447266" green="0.31413102149963379" blue="0.24103823304176331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPL-QD-o9v">
+                                        <rect key="frame" x="22" y="222" width="523" height="73"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3l-9g-wVw">
+                                                <rect key="frame" x="181.5" y="6.5" width="160" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="fMc-2D-8vB">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="180"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="60" id="jG1-VE-Ilo">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <state key="normal" image="spinBtn"/>
+                                                <connections>
+                                                    <action selector="spinAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7RX-rI-zzN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdH-3B-Tph">
+                                                <rect key="frame" x="371.5" y="6.5" width="145" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="145" id="g8p-OC-j5u">
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="180"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="60" id="zvB-oZ-AuP">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
+                                                <state key="normal" title="Coins :  $ 100" backgroundImage="marksLbl">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="22"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajv-QD-L63">
+                                                <rect key="frame" x="111.5" y="14" width="45" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="LbK-W9-hFy"/>
+                                                    <constraint firstAttribute="width" constant="45" id="zgr-A6-Ndl"/>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                <state key="normal" image="about"/>
+                                                <connections>
+                                                    <segue destination="ZFq-0c-Aoo" kind="presentation" modalTransitionStyle="crossDissolve" id="aMY-H3-ZeN"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bet" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HbQ-oK-oZi">
+                                                <rect key="frame" x="-7" y="6.5" width="117" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="117" id="O5k-xa-1Vl">
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="145"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="60" id="tsn-2o-Kgo">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                                    </constraint>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZh-lB-0vn">
+                                                <rect key="frame" x="72" y="12" width="32" height="45"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="1sY-YG-wbw">
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="38"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="47"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="45" id="bJC-MI-kMt">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                <connections>
+                                                    <action selector="decreaseBetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ThH-he-XPE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zme-9v-YGm">
+                                                <rect key="frame" x="-1" y="12" width="32" height="45"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="LsA-0d-zDC">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="32" id="gJe-qF-SwO">
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="47"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                <connections>
+                                                    <action selector="increaseBetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZw-8m-zKZ"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3m-FY-O2t">
+                                                <rect key="frame" x="48.5" y="27" width="18.5" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="Li5-3L-LiR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="18"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="bZh-lB-0vn" firstAttribute="leading" secondItem="zme-9v-YGm" secondAttribute="trailing" constant="41" id="7eM-ct-Cft">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="50"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="73" id="CHJ-eS-beF">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="90"/>
+                                            </constraint>
+                                            <constraint firstItem="ajv-QD-L63" firstAttribute="leading" secondItem="bZh-lB-0vn" secondAttribute="trailing" constant="7.5" id="CZ9-NG-uz6">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="18"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="26"/>
+                                            </constraint>
+                                            <constraint firstItem="zme-9v-YGm" firstAttribute="centerY" secondItem="dPL-QD-o9v" secondAttribute="centerY" constant="-2" id="GyD-ia-8TM"/>
+                                            <constraint firstItem="ajv-QD-L63" firstAttribute="centerY" secondItem="dPL-QD-o9v" secondAttribute="centerY" id="MNE-GY-F3F"/>
+                                            <constraint firstItem="BdH-3B-Tph" firstAttribute="centerY" secondItem="dPL-QD-o9v" secondAttribute="centerY" id="N38-zM-FiV"/>
+                                            <constraint firstItem="M3m-FY-O2t" firstAttribute="centerY" secondItem="dPL-QD-o9v" secondAttribute="centerY" constant="-1" id="V0W-gM-C3y"/>
+                                            <constraint firstItem="ajv-QD-L63" firstAttribute="leading" secondItem="HbQ-oK-oZi" secondAttribute="trailing" constant="1.5" id="Yqx-Xn-TFC">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                                            </constraint>
+                                            <constraint firstItem="HbQ-oK-oZi" firstAttribute="centerY" secondItem="dPL-QD-o9v" secondAttribute="centerY" id="Yt7-cN-uzQ"/>
+                                            <constraint firstItem="h3l-9g-wVw" firstAttribute="centerX" secondItem="dPL-QD-o9v" secondAttribute="centerX" id="ZMs-v8-JXu"/>
+                                            <constraint firstItem="BdH-3B-Tph" firstAttribute="leading" secondItem="h3l-9g-wVw" secondAttribute="trailing" constant="30" id="alO-AL-wyk">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                            </constraint>
+                                            <constraint firstItem="bZh-lB-0vn" firstAttribute="leading" secondItem="M3m-FY-O2t" secondAttribute="trailing" constant="5" id="asJ-tm-d2N">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="22"/>
+                                            </constraint>
+                                            <constraint firstItem="bZh-lB-0vn" firstAttribute="centerY" secondItem="dPL-QD-o9v" secondAttribute="centerY" constant="-2" id="jAF-kd-9qE"/>
+                                            <constraint firstItem="h3l-9g-wVw" firstAttribute="centerY" secondItem="dPL-QD-o9v" secondAttribute="centerY" id="mKK-Sy-Mcy"/>
+                                            <constraint firstItem="h3l-9g-wVw" firstAttribute="leading" secondItem="ajv-QD-L63" secondAttribute="trailing" constant="25" id="oXF-2d-41F">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                            </constraint>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkO-fm-H8N">
+                                        <rect key="frame" x="20" y="25" width="525" height="191"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Uy-Cd-3co">
+                                                <rect key="frame" x="0.0" y="0.0" width="525" height="120"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4yD-cR-iHf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="525" height="120"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="TTz-F0-u7v">
+                                                                <rect key="frame" x="0.0" y="0.0" width="525" height="39.5"/>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="leJ-Fv-oAm">
+                                                                <rect key="frame" x="0.0" y="40.5" width="525" height="39"/>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="WhM-Yu-VVd">
+                                                                <rect key="frame" x="0.0" y="80.5" width="525" height="39.5"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="120" id="LyR-7X-vbr">
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="525" id="X8F-Vz-qCa">
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="570"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="850"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="4yD-cR-iHf" firstAttribute="centerY" secondItem="6Uy-Cd-3co" secondAttribute="centerY" id="4XE-Yp-Pp4"/>
+                                                    <constraint firstAttribute="height" constant="120" id="dmR-JQ-giw">
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                                    </constraint>
+                                                    <constraint firstItem="4yD-cR-iHf" firstAttribute="centerX" secondItem="6Uy-Cd-3co" secondAttribute="centerX" id="lUl-Ih-vgw"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="leV-g7-1Ql">
+                                                <rect key="frame" x="0.0" y="120" width="525" height="71"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pa9-25-7hA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="525" height="71"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ikE-y7-z0v">
+                                                                <rect key="frame" x="0.0" y="0.0" width="525" height="35"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pe-75-u4Z">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="174.5" height="35"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                                                        <state key="normal" title="1st 12">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="18"/>
+                                                                        </variation>
+                                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="firstTo12Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcH-JL-hiY"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghC-ed-InY">
+                                                                        <rect key="frame" x="175.5" y="0.0" width="174" height="35"/>
+                                                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                                                        <state key="normal" title="2nd 12">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="18"/>
+                                                                        </variation>
+                                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="secondTo12Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="onJ-MS-ywA"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YS-hr-smM">
+                                                                        <rect key="frame" x="350.5" y="0.0" width="174.5" height="35"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                                                        <state key="normal" title="3rd 12">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=regular">
+                                                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="18"/>
+                                                                        </variation>
+                                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="thirdTo12Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pk2-Ux-ixP"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <variation key="heightClass=regular-widthClass=regular" spacing="4"/>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="IVR-N0-Grq">
+                                                                <rect key="frame" x="0.0" y="36" width="525" height="35"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cU9-GS-Fsu" customClass="BetCardController" customModule="The_Casino_Kingdom" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="35"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bj-JB-2Vy" customClass="BetCardController" customModule="The_Casino_Kingdom" customModuleProvider="target">
+                                                                        <rect key="frame" x="87.5" y="0.0" width="87" height="35"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QJ-tt-Ng6" customClass="BetCardController" customModule="The_Casino_Kingdom" customModuleProvider="target">
+                                                                        <rect key="frame" x="175.5" y="0.0" width="86.5" height="35"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHf-vv-1Tn" customClass="BetCardController" customModule="The_Casino_Kingdom" customModuleProvider="target">
+                                                                        <rect key="frame" x="263" y="0.0" width="86.5" height="35"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4x-Em-amt" customClass="BetCardController" customModule="The_Casino_Kingdom" customModuleProvider="target">
+                                                                        <rect key="frame" x="350.5" y="0.0" width="87" height="35"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ty-BQ-UeC" customClass="BetCardController" customModule="The_Casino_Kingdom" customModuleProvider="target">
+                                                                        <rect key="frame" x="438.5" y="0.0" width="86.5" height="35"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="71" id="dej-DP-id1">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="525" id="wnN-Oz-xZs">
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="570"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="850"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Pa9-25-7hA" firstAttribute="centerY" secondItem="leV-g7-1Ql" secondAttribute="centerY" id="JXP-yh-1sM"/>
+                                                    <constraint firstAttribute="height" constant="71" id="mbV-7n-amx">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="140"/>
+                                                    </constraint>
+                                                    <constraint firstItem="Pa9-25-7hA" firstAttribute="centerX" secondItem="leV-g7-1Ql" secondAttribute="centerX" id="xHx-G1-aAl"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="leV-g7-1Ql" secondAttribute="bottom" id="7wE-om-fyv"/>
+                                            <constraint firstItem="6Uy-Cd-3co" firstAttribute="leading" secondItem="xkO-fm-H8N" secondAttribute="leading" id="9Lx-1e-d0B"/>
+                                            <constraint firstAttribute="trailing" secondItem="leV-g7-1Ql" secondAttribute="trailing" id="BnA-AW-lRZ"/>
+                                            <constraint firstItem="leV-g7-1Ql" firstAttribute="top" secondItem="6Uy-Cd-3co" secondAttribute="bottom" id="Fc5-Yk-mMw"/>
+                                            <constraint firstAttribute="trailing" secondItem="6Uy-Cd-3co" secondAttribute="trailing" id="HW0-4w-cpD"/>
+                                            <constraint firstItem="leV-g7-1Ql" firstAttribute="leading" secondItem="xkO-fm-H8N" secondAttribute="leading" id="Ndg-UV-q0n"/>
+                                            <constraint firstAttribute="height" constant="191" id="eAe-Jj-w7M">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                            </constraint>
+                                            <constraint firstItem="6Uy-Cd-3co" firstAttribute="top" secondItem="xkO-fm-H8N" secondAttribute="top" id="oRf-xs-pLp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="xkO-fm-H8N" firstAttribute="top" secondItem="j3T-1E-jqY" secondAttribute="top" constant="25" id="15f-xB-GdS"/>
+                                    <constraint firstAttribute="trailing" secondItem="dPL-QD-o9v" secondAttribute="trailing" constant="23" id="1d5-XH-y65"/>
+                                    <constraint firstItem="kdP-EU-F2E" firstAttribute="leading" secondItem="j3T-1E-jqY" secondAttribute="leading" id="3kX-zB-ciZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="kdP-EU-F2E" secondAttribute="trailing" id="5Fe-vt-BtP"/>
+                                    <constraint firstItem="kdP-EU-F2E" firstAttribute="top" secondItem="j3T-1E-jqY" secondAttribute="top" id="BGm-2v-UB2"/>
+                                    <constraint firstItem="xkO-fm-H8N" firstAttribute="leading" secondItem="j3T-1E-jqY" secondAttribute="leading" constant="20" id="BMH-mQ-Qla"/>
+                                    <constraint firstAttribute="bottom" secondItem="dPL-QD-o9v" secondAttribute="bottom" constant="25" id="ClQ-EW-NpH">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="kdP-EU-F2E" secondAttribute="bottom" id="bLp-vI-VEf"/>
+                                    <constraint firstItem="dPL-QD-o9v" firstAttribute="leading" secondItem="j3T-1E-jqY" secondAttribute="leading" constant="22" id="bqQ-VA-1Z5"/>
+                                    <constraint firstAttribute="trailing" secondItem="xkO-fm-H8N" secondAttribute="trailing" constant="23" id="eDc-tQ-b55"/>
+                                    <constraint firstItem="xkO-fm-H8N" firstAttribute="centerX" secondItem="j3T-1E-jqY" secondAttribute="centerX" constant="-1.5" id="g3E-ec-XjS"/>
+                                    <constraint firstItem="dPL-QD-o9v" firstAttribute="top" secondItem="xkO-fm-H8N" secondAttribute="bottom" constant="6" id="yCJ-sY-9gu">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j3T-1E-jqY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DXH-8j-Mzb"/>
+                            <constraint firstAttribute="bottom" secondItem="j3T-1E-jqY" secondAttribute="bottom" id="V3F-WZ-8B3"/>
+                            <constraint firstAttribute="trailing" secondItem="j3T-1E-jqY" secondAttribute="trailing" id="eey-xJ-9zq"/>
+                            <constraint firstItem="j3T-1E-jqY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="so7-5U-Zbw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="betLbl" destination="M3m-FY-O2t" id="VOT-md-PWF"/>
+                        <outlet property="coinLblBtn" destination="BdH-3B-Tph" id="oaw-jZ-1EB"/>
+                        <outlet property="firstStack" destination="WhM-Yu-VVd" id="jjL-mk-wkg"/>
+                        <outlet property="firstTo12Btn" destination="3Pe-75-u4Z" id="Xgq-a9-9ta"/>
+                        <outlet property="lastStack" destination="TTz-F0-u7v" id="gwD-LU-YZb"/>
+                        <outlet property="secondStack" destination="leJ-Fv-oAm" id="PSB-yq-1cE"/>
+                        <outlet property="secondTo12Btn" destination="ghC-ed-InY" id="uF2-ze-81q"/>
+                        <outlet property="thirdTo12Btn" destination="5YS-hr-smM" id="1vO-GX-TXz"/>
+                        <outlet property="view1" destination="cU9-GS-Fsu" id="18d-6D-A7Y"/>
+                        <outlet property="view2" destination="6bj-JB-2Vy" id="Jgl-ow-GuM"/>
+                        <outlet property="view3" destination="6QJ-tt-Ng6" id="gHm-AB-8xY"/>
+                        <outlet property="view4" destination="ZHf-vv-1Tn" id="NYX-We-Cmu"/>
+                        <outlet property="view5" destination="Y4x-Em-amt" id="DI4-OK-bIh"/>
+                        <outlet property="view6" destination="9Ty-BQ-UeC" id="XDe-B8-UrO"/>
+                        <segue destination="7Nl-f9-WdT" kind="presentation" identifier="weelIdentifier" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="q6B-VE-yDI"/>
+                        <segue destination="6Eb-rJ-Zo0" kind="presentation" identifier="winIdentifier" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="Oez-qN-Y1s"/>
+                        <segue destination="bau-3v-x31" kind="presentation" identifier="gameOverIdentifier" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="mff-sJ-PJ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87.676056338028175" y="93.75"/>
+        </scene>
+        <!--Weel View Controller-->
+        <scene sceneID="jKB-4B-Mza">
+            <objects>
+                <viewController id="7Nl-f9-WdT" customClass="WeelViewController" customModule="The_Casino_Kingdom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vTG-bJ-SxN">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqg-lI-iSa">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dimLayer_3" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Run-Os-LaV">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Em-GX-xhy">
+                                        <rect key="frame" x="134" y="10" width="300" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="kex-WK-XFi">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="400"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="610"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="300" id="z7U-gd-oXQ">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="400"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="610"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wsJ-nH-zgd">
+                                        <rect key="frame" x="434" y="135.5" width="70" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="h0S-N8-u1x"/>
+                                            <constraint firstAttribute="height" constant="49" id="hhv-ZE-YkF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spinValueLbl" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ono-XB-bso">
+                                        <rect key="frame" x="428" y="8" width="77" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="??" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8nd-2m-riB">
+                                        <rect key="frame" x="435" y="18" width="63" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="26"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="35"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wsJ-nH-zgd" firstAttribute="centerY" secondItem="kqg-lI-iSa" secondAttribute="centerY" id="4lG-qo-HMA"/>
+                                    <constraint firstItem="wsJ-nH-zgd" firstAttribute="leading" secondItem="2Em-GX-xhy" secondAttribute="trailing" id="5e4-ht-Ful"/>
+                                    <constraint firstItem="2Em-GX-xhy" firstAttribute="centerX" secondItem="kqg-lI-iSa" secondAttribute="centerX" id="Uw7-OQ-5QX"/>
+                                    <constraint firstItem="2Em-GX-xhy" firstAttribute="centerY" secondItem="kqg-lI-iSa" secondAttribute="centerY" id="lWU-aW-fni"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kqg-lI-iSa" secondAttribute="trailing" id="HNn-9B-7Cq"/>
+                            <constraint firstItem="kqg-lI-iSa" firstAttribute="leading" secondItem="vTG-bJ-SxN" secondAttribute="leading" id="J1g-hU-nWf"/>
+                            <constraint firstItem="kqg-lI-iSa" firstAttribute="top" secondItem="vTG-bJ-SxN" secondAttribute="top" id="Jyl-r0-tXT"/>
+                            <constraint firstAttribute="bottom" secondItem="kqg-lI-iSa" secondAttribute="bottom" id="bVE-Tq-gjL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vps-KI-ris"/>
+                    </view>
+                    <connections>
+                        <outlet property="ball" destination="2Em-GX-xhy" id="YhX-ze-h38"/>
+                        <outlet property="marksLbl" destination="8nd-2m-riB" id="p7q-c9-I9b"/>
+                        <outlet property="roundImg" destination="Ono-XB-bso" id="VRx-Kf-6EZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FIt-v1-8Lr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87.676056338028175" y="1059.375"/>
+        </scene>
+        <!--Game Over Alert View Controller-->
+        <scene sceneID="RaT-Cz-hWR">
+            <objects>
+                <viewController id="bau-3v-x31" customClass="GameOverAlertViewController" customModule="The_Casino_Kingdom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bPi-d6-jbR">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jY7-U8-SUk">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dimLayer_3" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7m-pz-rCp">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameOverIamge" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4KR-se-tjJ">
+                                        <rect key="frame" x="164" y="96" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="6qm-Iu-Tl3"/>
+                                            <constraint firstAttribute="width" constant="240" id="Ve2-jZ-fbP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBO-hH-Ffs">
+                                        <rect key="frame" x="164" y="232" width="240" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="NKe-nF-5OA"/>
+                                            <constraint firstAttribute="height" constant="62" id="v0Y-uL-o7A"/>
+                                        </constraints>
+                                        <state key="normal" image="reStartBtn"/>
+                                        <connections>
+                                            <action selector="action:" destination="bau-3v-x31" eventType="touchUpInside" id="SUY-9p-5Um"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jBO-hH-Ffs" firstAttribute="centerX" secondItem="jY7-U8-SUk" secondAttribute="centerX" id="7DE-r5-55k"/>
+                                    <constraint firstItem="f7m-pz-rCp" firstAttribute="leading" secondItem="jY7-U8-SUk" secondAttribute="leading" id="872-K1-aE7"/>
+                                    <constraint firstItem="4KR-se-tjJ" firstAttribute="centerX" secondItem="jY7-U8-SUk" secondAttribute="centerX" id="C0q-mw-dSo"/>
+                                    <constraint firstItem="jBO-hH-Ffs" firstAttribute="top" secondItem="4KR-se-tjJ" secondAttribute="bottom" constant="8" id="JhH-FU-tMc"/>
+                                    <constraint firstItem="4KR-se-tjJ" firstAttribute="centerY" secondItem="jY7-U8-SUk" secondAttribute="centerY" id="KUv-Bv-7zE"/>
+                                    <constraint firstAttribute="trailing" secondItem="f7m-pz-rCp" secondAttribute="trailing" id="RpZ-0E-8wm"/>
+                                    <constraint firstItem="f7m-pz-rCp" firstAttribute="top" secondItem="jY7-U8-SUk" secondAttribute="top" id="Ui2-s8-q6G"/>
+                                    <constraint firstAttribute="bottom" secondItem="f7m-pz-rCp" secondAttribute="bottom" id="asi-CR-oaq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jY7-U8-SUk" firstAttribute="top" secondItem="bPi-d6-jbR" secondAttribute="top" id="HZA-8a-fDW"/>
+                            <constraint firstAttribute="trailing" secondItem="jY7-U8-SUk" secondAttribute="trailing" id="Pdl-Ip-V4m"/>
+                            <constraint firstAttribute="bottom" secondItem="jY7-U8-SUk" secondAttribute="bottom" id="VOs-yJ-Jq3"/>
+                            <constraint firstItem="jY7-U8-SUk" firstAttribute="leading" secondItem="bPi-d6-jbR" secondAttribute="leading" id="hzh-Vg-eDZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yeK-dZ-EkW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRD-o1-ue3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="1059"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="8Ks-gm-Cw3">
+            <objects>
+                <viewController id="ZFq-0c-Aoo" customClass="AboutViewController" customModule="The_Casino_Kingdom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fEE-Ty-pDH">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1On-aa-q1K">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutbaclground" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Twg-vC-6Gg">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ff1-Qt-1Q2">
+                                        <rect key="frame" x="42" y="96" width="484" height="202"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="202" id="Ecd-6A-9Gz">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="220"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="484" id="fV7-aM-QVh">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="550"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="650"/>
+                                            </constraint>
+                                        </constraints>
+                                        <string key="text">The game of roulette is played using a roulette wheel and a table.
+The outer part of the table is represented in green and consists of grouped bets. These include the sections of the table ‘1st 12’, ‘2nd 12’, ‘3rd 12’, ‘1 to 18’, ‘Even’, ‘Red’, ‘Black’, ‘3rd 12’, ‘Odd’ and ’19 to 36’ and each ‘2 to 1’ column bet..
+
+The inside of the Roulette table consists of a grid marked with the numbers 1 through 36. Each one is circled with either black or red depending on the color the number corresponds with on the roulette wheel.</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="18"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="24"/>
+                                        </variation>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To Play" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SbH-jz-g6u">
+                                        <rect key="frame" x="100" y="22" width="161" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="0RW-3l-WhW"/>
+                                            <constraint firstAttribute="width" constant="161" id="gqx-he-7cT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="16"/>
+                                        <color key="textColor" red="1" green="0.58255845308303833" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="18"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version :  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="duq-Gl-f4q">
+                                        <rect key="frame" x="363" y="22" width="195" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="195" id="Tkp-nj-K7x"/>
+                                            <constraint firstAttribute="height" constant="36" id="fnK-8f-107"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="16"/>
+                                        <color key="textColor" red="1" green="0.58255845308303833" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="18"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pY9-kK-auM">
+                                        <rect key="frame" x="10" y="22" width="66" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="hZR-g2-pUo"/>
+                                            <constraint firstAttribute="height" constant="38" id="kWt-YU-Dvx"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" image="Arrow"/>
+                                        <connections>
+                                            <action selector="backActiob:" destination="ZFq-0c-Aoo" eventType="touchUpInside" id="Huy-QT-MI9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ff1-Qt-1Q2" firstAttribute="top" secondItem="1On-aa-q1K" secondAttribute="top" constant="96" id="2iF-fS-WWQ"/>
+                                    <constraint firstItem="Twg-vC-6Gg" firstAttribute="top" secondItem="1On-aa-q1K" secondAttribute="top" id="3wk-tS-jiS"/>
+                                    <constraint firstItem="pY9-kK-auM" firstAttribute="leading" secondItem="1On-aa-q1K" secondAttribute="leading" constant="10" id="AXv-mj-DD9"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ff1-Qt-1Q2" secondAttribute="bottom" constant="22" id="N5W-hh-0Zj"/>
+                                    <constraint firstItem="duq-Gl-f4q" firstAttribute="top" secondItem="1On-aa-q1K" secondAttribute="top" constant="22" id="Pc0-0R-UgQ">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="25"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="duq-Gl-f4q" secondAttribute="trailing" constant="10" id="Yhz-8a-1d1">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="28"/>
+                                    </constraint>
+                                    <constraint firstItem="Twg-vC-6Gg" firstAttribute="leading" secondItem="1On-aa-q1K" secondAttribute="leading" id="boL-5w-7na"/>
+                                    <constraint firstItem="SbH-jz-g6u" firstAttribute="top" secondItem="1On-aa-q1K" secondAttribute="top" constant="22" id="cSJ-TA-KiZ">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="25"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                    </constraint>
+                                    <constraint firstItem="Ff1-Qt-1Q2" firstAttribute="centerX" secondItem="1On-aa-q1K" secondAttribute="centerX" id="cT6-kE-sv3"/>
+                                    <constraint firstItem="SbH-jz-g6u" firstAttribute="leading" secondItem="1On-aa-q1K" secondAttribute="leading" constant="100" id="dxY-Ic-xSa"/>
+                                    <constraint firstAttribute="bottom" secondItem="Twg-vC-6Gg" secondAttribute="bottom" id="pii-8W-xtr"/>
+                                    <constraint firstItem="pY9-kK-auM" firstAttribute="top" secondItem="1On-aa-q1K" secondAttribute="top" constant="22" id="tqi-kG-17Y">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="25"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="Twg-vC-6Gg" secondAttribute="trailing" id="wMF-A5-AST"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1On-aa-q1K" secondAttribute="trailing" id="Dx5-iq-mRp"/>
+                            <constraint firstAttribute="bottom" secondItem="1On-aa-q1K" secondAttribute="bottom" id="Gdo-ts-3OW"/>
+                            <constraint firstItem="1On-aa-q1K" firstAttribute="top" secondItem="fEE-Ty-pDH" secondAttribute="top" id="J4U-Ku-Js8"/>
+                            <constraint firstItem="1On-aa-q1K" firstAttribute="leading" secondItem="fEE-Ty-pDH" secondAttribute="leading" id="ylj-79-X74"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lmB-n8-xLU"/>
+                    </view>
+                    <connections>
+                        <outlet property="apkVersionLbl" destination="duq-Gl-f4q" id="rtj-kh-DpG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJS-mn-3Qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-576.76056338028172" y="1057.5"/>
+        </scene>
+        <!--Win Alert View Controller-->
+        <scene sceneID="gV3-Ci-aJj">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="6Eb-rJ-Zo0" customClass="WinAlertViewController" customModule="The_Casino_Kingdom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gh4-Me-2uk">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9u-fc-XDX">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dimLayer_3" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WZ4-hW-Vs7">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="won" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h91-nh-nPv">
+                                        <rect key="frame" x="164" y="96" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$50.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lhn-A4-gU4">
+                                        <rect key="frame" x="225" y="165" width="119" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="WZ4-hW-Vs7" firstAttribute="leading" secondItem="U9u-fc-XDX" secondAttribute="leading" id="3UB-Lw-ZtK"/>
+                                    <constraint firstAttribute="trailing" secondItem="WZ4-hW-Vs7" secondAttribute="trailing" id="6HG-Z3-Mva"/>
+                                    <constraint firstAttribute="bottom" secondItem="WZ4-hW-Vs7" secondAttribute="bottom" id="Sav-4W-MdE"/>
+                                    <constraint firstItem="WZ4-hW-Vs7" firstAttribute="top" secondItem="U9u-fc-XDX" secondAttribute="top" id="vaW-sp-KDR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U9u-fc-XDX" firstAttribute="top" secondItem="gh4-Me-2uk" secondAttribute="top" id="Svr-iJ-u7i"/>
+                            <constraint firstAttribute="bottom" secondItem="U9u-fc-XDX" secondAttribute="bottom" id="dHp-SX-qc3"/>
+                            <constraint firstAttribute="trailing" secondItem="U9u-fc-XDX" secondAttribute="trailing" id="hFU-rT-sXi"/>
+                            <constraint firstItem="U9u-fc-XDX" firstAttribute="leading" secondItem="gh4-Me-2uk" secondAttribute="leading" id="vLX-QE-RE1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4eL-6o-Esh"/>
+                    </view>
+                    <connections>
+                        <outlet property="priceLbl" destination="lhn-A4-gU4" id="xOy-aM-HfM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLJ-Jd-24P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Arrow" width="95" height="61"/>
+        <image name="about" width="35" height="35"/>
+        <image name="aboutbaclground" width="812" height="457"/>
+        <image name="bet" width="185" height="68"/>
+        <image name="border" width="849.5" height="386"/>
+        <image name="circle" width="1024" height="1024"/>
+        <image name="dimLayer_3" width="814" height="375"/>
+        <image name="gameOverIamge" width="343" height="178"/>
+        <image name="marksLbl" width="193" height="68"/>
+        <image name="reStartBtn" width="288" height="85"/>
+        <image name="spinBtn" width="193" height="68"/>
+        <image name="spinValueLbl" width="118" height="118"/>
+        <image name="won" width="343" height="178"/>
+    </resources>
+</document>

@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B26F7E72313F64B005DE9F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B26F7E62313F64B005DE9F9 /* AppDelegate.swift */; };
+		7B26F7E92313F64B005DE9F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B26F7E82313F64B005DE9F9 /* ViewController.swift */; };
+		7B26F7EC2313F64B005DE9F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B26F7EA2313F64B005DE9F9 /* Main.storyboard */; };
+		7B26F7EE2313F64D005DE9F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B26F7ED2313F64D005DE9F9 /* Assets.xcassets */; };
+		7B26F7F12313F64D005DE9F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B26F7EF2313F64D005DE9F9 /* LaunchScreen.storyboard */; };
+		7B26F7FC2313F64D005DE9F9 /* Casino_KingdomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B26F7FB2313F64D005DE9F9 /* Casino_KingdomTests.swift */; };
+		7B26F8072313F64D005DE9F9 /* Casino_KingdomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B26F8062313F64D005DE9F9 /* Casino_KingdomUITests.swift */; };
+		7BA23FB52314EC78006A06C5 /* BetCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BA23FB42314EC78006A06C5 /* BetCard.xib */; };
+		7BA23FB72314EC94006A06C5 /* BetCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA23FB62314EC94006A06C5 /* BetCardController.swift */; };
+		7BA23FB92314FE6D006A06C5 /* WeelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA23FB82314FE6D006A06C5 /* WeelViewController.swift */; };
+		7BA23FBB23150264006A06C5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA23FBA23150264006A06C5 /* Item.swift */; };
+		7BA23FBD23150DCC006A06C5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA23FBC23150DCC006A06C5 /* AboutViewController.swift */; };
+		7BA23FC2231533DD006A06C5 /* RouletteNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA23FC1231533DD006A06C5 /* RouletteNumbers.swift */; };
+		7BA23FC523154071006A06C5 /* MainViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA23FC423154071006A06C5 /* MainViewExtension.swift */; };
+		7BBEA2652316580B00A74892 /* WinAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBEA2642316580B00A74892 /* WinAlertViewController.swift */; };
+		7BBEA268231681D600A74892 /* little_robot_sound_factory_Jingle_Win_Synth_06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BBEA267231681D600A74892 /* little_robot_sound_factory_Jingle_Win_Synth_06.mp3 */; };
+		7BBEA26A231681F300A74892 /* MusicPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBEA269231681F300A74892 /* MusicPlay.swift */; };
+		7BBEA26C23168C6200A74892 /* 157728__davidkyoku__spinning-bicycle-wheel.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BBEA26B23168C6200A74892 /* 157728__davidkyoku__spinning-bicycle-wheel.wav */; };
+		7BBEA26E231697DD00A74892 /* GameOverAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBEA26D231697DD00A74892 /* GameOverAlertViewController.swift */; };
+		7BCA32522317822D002F4868 /* BetBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BCA32512317822D002F4868 /* BetBtn.xib */; };
+		7BCA32542317829A002F4868 /* BetBtnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA32532317829A002F4868 /* BetBtnController.swift */; };
+		7BCA32582317B54A002F4868 /* 139001__jhka__revolver-chamber-spin-ratchet-sound-[AudioTrimmer.com].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BCA32572317B54A002F4868 /* 139001__jhka__revolver-chamber-spin-ratchet-sound-[AudioTrimmer.com].mp3 */; };
+		7BCA325B2317CEE3002F4868 /* tape-recorder-eject-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BCA325A2317CEE3002F4868 /* tape-recorder-eject-1.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B26F7F82313F64D005DE9F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B26F7DB2313F64B005DE9F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B26F7E22313F64B005DE9F9;
+			remoteInfo = "Casino Kingdom";
+		};
+		7B26F8032313F64D005DE9F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B26F7DB2313F64B005DE9F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B26F7E22313F64B005DE9F9;
+			remoteInfo = "Casino Kingdom";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B26F7E32313F64B005DE9F9 /* The Casino Kingdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Casino Kingdom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B26F7E62313F64B005DE9F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B26F7E82313F64B005DE9F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B26F7EB2313F64B005DE9F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B26F7ED2313F64D005DE9F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B26F7F02313F64D005DE9F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B26F7F22313F64D005DE9F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B26F7F72313F64D005DE9F9 /* The Casino KingdomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Casino KingdomTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B26F7FB2313F64D005DE9F9 /* Casino_KingdomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Casino_KingdomTests.swift; sourceTree = "<group>"; };
+		7B26F7FD2313F64D005DE9F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B26F8022313F64D005DE9F9 /* The Casino KingdomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Casino KingdomUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B26F8062313F64D005DE9F9 /* Casino_KingdomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Casino_KingdomUITests.swift; sourceTree = "<group>"; };
+		7B26F8082313F64D005DE9F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BA23FB42314EC78006A06C5 /* BetCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BetCard.xib; sourceTree = "<group>"; };
+		7BA23FB62314EC94006A06C5 /* BetCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetCardController.swift; sourceTree = "<group>"; };
+		7BA23FB82314FE6D006A06C5 /* WeelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeelViewController.swift; sourceTree = "<group>"; };
+		7BA23FBA23150264006A06C5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7BA23FBC23150DCC006A06C5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		7BA23FC1231533DD006A06C5 /* RouletteNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteNumbers.swift; sourceTree = "<group>"; };
+		7BA23FC423154071006A06C5 /* MainViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewExtension.swift; sourceTree = "<group>"; };
+		7BBEA2642316580B00A74892 /* WinAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinAlertViewController.swift; sourceTree = "<group>"; };
+		7BBEA267231681D600A74892 /* little_robot_sound_factory_Jingle_Win_Synth_06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = little_robot_sound_factory_Jingle_Win_Synth_06.mp3; sourceTree = "<group>"; };
+		7BBEA269231681F300A74892 /* MusicPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlay.swift; sourceTree = "<group>"; };
+		7BBEA26B23168C6200A74892 /* 157728__davidkyoku__spinning-bicycle-wheel.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "157728__davidkyoku__spinning-bicycle-wheel.wav"; sourceTree = "<group>"; };
+		7BBEA26D231697DD00A74892 /* GameOverAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverAlertViewController.swift; sourceTree = "<group>"; };
+		7BCA32512317822D002F4868 /* BetBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BetBtn.xib; sourceTree = "<group>"; };
+		7BCA32532317829A002F4868 /* BetBtnController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetBtnController.swift; sourceTree = "<group>"; };
+		7BCA32572317B54A002F4868 /* 139001__jhka__revolver-chamber-spin-ratchet-sound-[AudioTrimmer.com].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "139001__jhka__revolver-chamber-spin-ratchet-sound-[AudioTrimmer.com].mp3"; sourceTree = "<group>"; };
+		7BCA325A2317CEE3002F4868 /* tape-recorder-eject-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "tape-recorder-eject-1.wav"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B26F7E02313F64B005DE9F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B26F7F42313F64D005DE9F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B26F7FF2313F64D005DE9F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B26F7DA2313F64B005DE9F9 = {
+			isa = PBXGroup;
+			children = (
+				7B26F7E52313F64B005DE9F9 /* Casino Kingdom */,
+				7B26F7FA2313F64D005DE9F9 /* Casino KingdomTests */,
+				7B26F8052313F64D005DE9F9 /* Casino KingdomUITests */,
+				7B26F7E42313F64B005DE9F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B26F7E42313F64B005DE9F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B26F7E32313F64B005DE9F9 /* The Casino Kingdom.app */,
+				7B26F7F72313F64D005DE9F9 /* The Casino KingdomTests.xctest */,
+				7B26F8022313F64D005DE9F9 /* The Casino KingdomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B26F7E52313F64B005DE9F9 /* Casino Kingdom */ = {
+			isa = PBXGroup;
+			children = (
+				7BBEA266231681C700A74892 /* sounds */,
+				7BA23FC32315404B006A06C5 /* custom_extension */,
+				7BA23FC023152E86006A06C5 /* storyboards */,
+				7BA23FB32314EC57006A06C5 /* customview */,
+				7BA23FBF23152E64006A06C5 /* model */,
+				7BA23FBE23152E55006A06C5 /* controllers */,
+				7B26F7E62313F64B005DE9F9 /* AppDelegate.swift */,
+				7B26F7ED2313F64D005DE9F9 /* Assets.xcassets */,
+				7B26F7F22313F64D005DE9F9 /* Info.plist */,
+			);
+			path = "Casino Kingdom";
+			sourceTree = "<group>";
+		};
+		7B26F7FA2313F64D005DE9F9 /* Casino KingdomTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B26F7FB2313F64D005DE9F9 /* Casino_KingdomTests.swift */,
+				7B26F7FD2313F64D005DE9F9 /* Info.plist */,
+			);
+			path = "Casino KingdomTests";
+			sourceTree = "<group>";
+		};
+		7B26F8052313F64D005DE9F9 /* Casino KingdomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B26F8062313F64D005DE9F9 /* Casino_KingdomUITests.swift */,
+				7B26F8082313F64D005DE9F9 /* Info.plist */,
+			);
+			path = "Casino KingdomUITests";
+			sourceTree = "<group>";
+		};
+		7BA23FB32314EC57006A06C5 /* customview */ = {
+			isa = PBXGroup;
+			children = (
+				7BA23FB42314EC78006A06C5 /* BetCard.xib */,
+				7BA23FB62314EC94006A06C5 /* BetCardController.swift */,
+				7BCA32512317822D002F4868 /* BetBtn.xib */,
+				7BCA32532317829A002F4868 /* BetBtnController.swift */,
+			);
+			path = customview;
+			sourceTree = "<group>";
+		};
+		7BA23FBE23152E55006A06C5 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BA23FB82314FE6D006A06C5 /* WeelViewController.swift */,
+				7BA23FBC23150DCC006A06C5 /* AboutViewController.swift */,
+				7B26F7E82313F64B005DE9F9 /* ViewController.swift */,
+				7BBEA2642316580B00A74892 /* WinAlertViewController.swift */,
+				7BBEA26D231697DD00A74892 /* GameOverAlertViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		7BA23FBF23152E64006A06C5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7BA23FBA23150264006A06C5 /* Item.swift */,
+				7BA23FC1231533DD006A06C5 /* RouletteNumbers.swift */,
+				7BBEA269231681F300A74892 /* MusicPlay.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7BA23FC023152E86006A06C5 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7B26F7EA2313F64B005DE9F9 /* Main.storyboard */,
+				7B26F7EF2313F64D005DE9F9 /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		7BA23FC32315404B006A06C5 /* custom_extension */ = {
+			isa = PBXGroup;
+			children = (
+				7BA23FC423154071006A06C5 /* MainViewExtension.swift */,
+			);
+			path = custom_extension;
+			sourceTree = "<group>";
+		};
+		7BBEA266231681C700A74892 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7BBEA267231681D600A74892 /* little_robot_sound_factory_Jingle_Win_Synth_06.mp3 */,
+				7BBEA26B23168C6200A74892 /* 157728__davidkyoku__spinning-bicycle-wheel.wav */,
+				7BCA32572317B54A002F4868 /* 139001__jhka__revolver-chamber-spin-ratchet-sound-[AudioTrimmer.com].mp3 */,
+				7BCA325A2317CEE3002F4868 /* tape-recorder-eject-1.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B26F7E22313F64B005DE9F9 /* The Casino Kingdom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B26F80B2313F64D005DE9F9 /* Build configuration list for PBXNativeTarget "The Casino Kingdom" */;
+			buildPhases = (
+				7B26F7DF2313F64B005DE9F9 /* Sources */,
+				7B26F7E02313F64B005DE9F9 /* Frameworks */,
+				7B26F7E12313F64B005DE9F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Casino Kingdom";
+			productName = "Casino Kingdom";
+			productReference = 7B26F7E32313F64B005DE9F9 /* The Casino Kingdom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B26F7F62313F64D005DE9F9 /* The Casino KingdomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B26F80E2313F64D005DE9F9 /* Build configuration list for PBXNativeTarget "The Casino KingdomTests" */;
+			buildPhases = (
+				7B26F7F32313F64D005DE9F9 /* Sources */,
+				7B26F7F42313F64D005DE9F9 /* Frameworks */,
+				7B26F7F52313F64D005DE9F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B26F7F92313F64D005DE9F9 /* PBXTargetDependency */,
+			);
+			name = "The Casino KingdomTests";
+			productName = "Casino KingdomTests";
+			productReference = 7B26F7F72313F64D005DE9F9 /* The Casino KingdomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B26F8012313F64D005DE9F9 /* The Casino KingdomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B26F8112313F64D005DE9F9 /* Build configuration list for PBXNativeTarget "The Casino KingdomUITests" */;
+			buildPhases = (
+				7B26F7FE2313F64D005DE9F9 /* Sources */,
+				7B26F7FF2313F64D005DE9F9 /* Frameworks */,
+				7B26F8002313F64D005DE9F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B26F8042313F64D005DE9F9 /* PBXTargetDependency */,
+			);
+			name = "The Casino KingdomUITests";
+			productName = "Casino KingdomUITests";
+			productReference = 7B26F8022313F64D005DE9F9 /* The Casino KingdomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B26F7DB2313F64B005DE9F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Treinetic Macbook004";
+				TargetAttributes = {
+					7B26F7E22313F64B005DE9F9 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					7B26F7F62313F64D005DE9F9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 7B26F7E22313F64B005DE9F9;
+					};
+					7B26F8012313F64D005DE9F9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 7B26F7E22313F64B005DE9F9;
+					};
+				};
+			};
+			buildConfigurationList = 7B26F7DE2313F64B005DE9F9 /* Build configuration list for PBXProject "The Casino Kingdom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B26F7DA2313F64B005DE9F9;
+			productRefGroup = 7B26F7E42313F64B005DE9F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B26F7E22313F64B005DE9F9 /* The Casino Kingdom */,
+				7B26F7F62313F64D005DE9F9 /* The Casino KingdomTests */,
+				7B26F8012313F64D005DE9F9 /* The Casino KingdomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B26F7E12313F64B005DE9F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B26F7F12313F64D005DE9F9 /* LaunchScreen.storyboard in Resources */,
+				7BCA32582317B54A002F4868 /* 139001__jhka__revolver-chamber-spin-ratchet-sound-[AudioTrimmer.com].mp3 in Resources */,
+				7BA23FB52314EC78006A06C5 /* BetCard.xib in Resources */,
+				7BCA32522317822D002F4868 /* BetBtn.xib in Resources */,
+				7BBEA268231681D600A74892 /* little_robot_sound_factory_Jingle_Win_Synth_06.mp3 in Resources */,
+				7BBEA26C23168C6200A74892 /* 157728__davidkyoku__spinning-bicycle-wheel.wav in Resources */,
+				7BCA325B2317CEE3002F4868 /* tape-recorder-eject-1.wav in Resources */,
+				7B26F7EE2313F64D005DE9F9 /* Assets.xcassets in Resources */,
+				7B26F7EC2313F64B005DE9F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B26F7F52313F64D005DE9F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B26F8002313F64D005DE9F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B26F7DF2313F64B005DE9F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BCA32542317829A002F4868 /* BetBtnController.swift in Sources */,
+				7BBEA26E231697DD00A74892 /* GameOverAlertViewController.swift in Sources */,
+				7BA23FBD23150DCC006A06C5 /* AboutViewController.swift in Sources */,
+				7BA23FBB23150264006A06C5 /* Item.swift in Sources */,
+				7BA23FC2231533DD006A06C5 /* RouletteNumbers.swift in Sources */,
+				7BA23FB72314EC94006A06C5 /* BetCardController.swift in Sources */,
+				7BBEA2652316580B00A74892 /* WinAlertViewController.swift in Sources */,
+				7BBEA26A231681F300A74892 /* MusicPlay.swift in Sources */,
+				7B26F7E92313F64B005DE9F9 /* ViewController.swift in Sources */,
+				7B26F7E72313F64B005DE9F9 /* AppDelegate.swift in Sources */,
+				7BA23FB92314FE6D006A06C5 /* WeelViewController.swift in Sources */,
+				7BA23FC523154071006A06C5 /* MainViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B26F7F32313F64D005DE9F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B26F7FC2313F64D005DE9F9 /* Casino_KingdomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B26F7FE2313F64D005DE9F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B26F8072313F64D005DE9F9 /* Casino_KingdomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B26F7F92313F64D005DE9F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B26F7E22313F64B005DE9F9 /* The Casino Kingdom */;
+			targetProxy = 7B26F7F82313F64D005DE9F9 /* PBXContainerItemProxy */;
+		};
+		7B26F8042313F64D005DE9F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B26F7E22313F64B005DE9F9 /* The Casino Kingdom */;
+			targetProxy = 7B26F8032313F64D005DE9F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B26F7EA2313F64B005DE9F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B26F7EB2313F64B005DE9F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B26F7EF2313F64D005DE9F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B26F7F02313F64D005DE9F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B26F8092313F64D005DE9F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B26F80A2313F64D005DE9F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B26F80C2313F64D005DE9F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4W5C6N95PC;
+				INFOPLIST_FILE = "Casino Kingdom/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tg.ravens-004.057-casino-kingdom";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B26F80D2313F64D005DE9F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4W5C6N95PC;
+				INFOPLIST_FILE = "Casino Kingdom/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tg.ravens-004.057-casino-kingdom";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B26F80F2313F64D005DE9F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LCLFP684Z;
+				INFOPLIST_FILE = "Casino KingdomTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tg.ravens.004.Casino-KingdomTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Casino Kingdom.app/The Casino Kingdom";
+			};
+			name = Debug;
+		};
+		7B26F8102313F64D005DE9F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LCLFP684Z;
+				INFOPLIST_FILE = "Casino KingdomTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tg.ravens.004.Casino-KingdomTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Casino Kingdom.app/The Casino Kingdom";
+			};
+			name = Release;
+		};
+		7B26F8122313F64D005DE9F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LCLFP684Z;
+				INFOPLIST_FILE = "Casino KingdomUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tg.ravens.004.Casino-KingdomUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Casino Kingdom";
+			};
+			name = Debug;
+		};
+		7B26F8132313F64D005DE9F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LCLFP684Z;
+				INFOPLIST_FILE = "Casino KingdomUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tg.ravens.004.Casino-KingdomUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Casino Kingdom";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B26F7DE2313F64B005DE9F9 /* Build configuration list for PBXProject "The Casino Kingdom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B26F8092313F64D005DE9F9 /* Debug */,
+				7B26F80A2313F64D005DE9F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B26F80B2313F64D005DE9F9 /* Build configuration list for PBXNativeTarget "The Casino Kingdom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B26F80C2313F64D005DE9F9 /* Debug */,
+				7B26F80D2313F64D005DE9F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B26F80E2313F64D005DE9F9 /* Build configuration list for PBXNativeTarget "The Casino KingdomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B26F80F2313F64D005DE9F9 /* Debug */,
+				7B26F8102313F64D005DE9F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B26F8112313F64D005DE9F9 /* Build configuration list for PBXNativeTarget "The Casino KingdomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B26F8122313F64D005DE9F9 /* Debug */,
+				7B26F8132313F64D005DE9F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B26F7DB2313F64B005DE9F9 /* Project object */;
+}
